@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-decoration: none;
+  margin: 0;
+  text-align: center;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      190deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://images.unsplash.com/photo-1641249891589-379ef0531a9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section {
+  text-align: center;
+  color: white;
+}
+
+section h1 {
+  font-weight: 600;
+}
+
+section p {
+  font-size: large;
+}
+
+input,
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+#inputString {
+  height: 3rem;
+  
+  padding: 0.25rem 0.75rem;
+  background-color: #fff;
+  
+  border-radius: 0.25rem;
+  margin-left: 2rem;
+}
+
+input:focus {
+   border-bottom: 3px solid #D61067;
+}
+
+#submitButton {
+  background-color: #c40f5e;
+  color: white;
+  font-weight: 500;
+  margin-left: 3rem;
+}
+
+#submitButton:hover {
+  background-color: #1B0734;
+}
+
+#displayWord {
+  font-size: large;
+  text-align: center;
+  color: #b156fe;
+  font-weight: 600;
+  background-color: whitesmoke;
+}
+
+@media screen and (max-width: 600px) {
+ .col-md-6 {
+    margin: auto;
+  }
+
+  p {
+  margin: auto;
+}
+#inputString {
+  margin-left: 0;
+}
+#submitButton {
+  margin-left: 1rem;
+  height: 3rem;
+}
+
+}
+
+@media screen and (max-width: 720px) {
+  .col-md-6 {
+    margin: auto;
+  }
+  #inputString {
+    margin-left: 0;
+  }
+  #submitButton {
+    margin-left: 1rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .col-md-6 {
+    margin: auto;
+    justify-content: space-around;
+  }
+  
+  #inputString {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1310px) {
+  .col-md-6 {
+    margin: auto;
+    justify-content: space-evenly;
+  }
+
+}
